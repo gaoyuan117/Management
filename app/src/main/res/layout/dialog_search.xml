@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间段"
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_search_wuzimingcheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@mipmap/search_input_bg"
+            android:hint="请输入物资名称"
+            android:paddingLeft="16dp"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="起始日期"
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_search_guigexinghao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@mipmap/search_input_bg"
+            android:hint="请输入物资规格型号"
+            android:paddingLeft="16dp"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_search_starttime"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/bt_blue_bg"
+            android:text="选择日期"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束日期"
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/et_search_pinpai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@mipmap/search_input_bg"
+            android:hint="请输入品牌"
+            android:paddingLeft="16dp"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_search_endtime"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/bt_blue_bg"
+            android:text="选择日期"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编号        "
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_search_bianhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@mipmap/search_input_bg"
+            android:hint="请输入物资编号"
+            android:paddingLeft="16dp"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_line" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="32dp">
+
+        <ImageView
+            android:id="@+id/img_search_chongzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/chongzhi" />
+
+        <ImageView
+            android:id="@+id/img_search_chaxun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/chaxun" />
+    </LinearLayout>
+
+
+</LinearLayout>

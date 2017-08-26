@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_register_login"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="46dp"
+        android:src="@mipmap/logo" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="46dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rg_register_choose_supply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/rg_selector"
+            android:padding="10dp"
+            android:text="供应商注册"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rg_register_choose_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/rg_selector"
+            android:padding="10dp"
+            android:text="物资管理人员注册"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rg_register_choose_subcontractor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/rg_selector"
+            android:padding="10dp"
+            android:text="分包商注册"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/rg_selector"
+            android:padding="10dp"
+            android:text="上传视频"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <ImageView
+
+        android:id="@+id/rg_register_choose_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/fanhui" />
+
+</LinearLayout>

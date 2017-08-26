@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_weiyanshoufaliao_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_faliaomingxi_name"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/biankuang"
+                android:gravity="center"
+                android:text="编号：FH1111111"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/img_faliaomingxi_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/tv_weiyanshoufaliao_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未收料"
+                    android:textColor="#e93226"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img_weiyanshoufaliao_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_weiyanshoufaliao_status"
+                    android:layout_marginTop="8dp"
+                    android:src="@mipmap/edit" />
+
+                <ImageView
+                    android:id="@+id/img_weiyanshoufaliao_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/img_weiyanshoufaliao_edit"
+                    android:layout_alignRight="@+id/tv_weiyanshoufaliao_status"
+                    android:layout_below="@+id/tv_weiyanshoufaliao_status"
+                    android:layout_marginTop="8dp"
+                    android:src="@mipmap/delete" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_weiyanshoufaliao_faliaoren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="发料人：某某" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发料人签字：" />
+
+            <ImageView
+                android:id="@+id/img_weiyanshoufaliao_fa"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_weiyanshoufaliao_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看本批次物料明细"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/img_weiyanshoufaliao_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/more" />
+
+        </LinearLayout>
+
+        <com.gaoyuan.management.view.MyListView
+            android:visibility="gone"
+            android:id="@+id/lv_weiyanshoufaliao_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

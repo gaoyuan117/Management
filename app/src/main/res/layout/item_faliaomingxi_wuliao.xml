@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_faliaomingxi_wuzi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="物资1名称"
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_faliaomingxi_wuzi_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发料时间：2017-12-09"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_faliaomingxi_wuzi_pinpai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="品牌：某某品牌"
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_faliaomingxi_wuzi_xinghao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="规格型号：2-09"
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_faliaomingxi_wuzi_danwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="计算单位：吨"
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_faliaomingxi_wuzi_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="数量：5"
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:gravity="right"
+            android:id="@+id/tv_faliaomingxi_wuzi_heshounum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="核收数量：2"
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

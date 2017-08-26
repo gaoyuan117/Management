@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9fafb"
+    android:orientation="vertical"
+    tools:context="com.gaoyuan.management.activity.PersonalActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="头像"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_personal_avatar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@mipmap/default_avatar" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="账号"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_personal_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14763766689" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_line" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_personal_conpany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="单位名称"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_personal_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_personal_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="职务"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_personal_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无" />
+        </LinearLayout>
+        <include layout="@layout/layout_line" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_personal_project"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="项目"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_personal_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:text="账号绑定"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+
+        <include layout="@layout/layout_line" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="手机号码"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_personal_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14763766689" />
+
+            <ImageView
+                android:id="@+id/img_personal_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/change"
+                android:layout_marginLeft="6dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_personal_pic"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/tv_personal_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="营业执照图片"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_personal_yyzz"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/yingyezhizhao" />
+    </LinearLayout>
+
+
+</LinearLayout>

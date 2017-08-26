@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gaoyuan.management">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logoo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegisterChooseActivity" />
+        <activity android:name=".activity.RegisterSupplyActivity" />
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".activity.RegisterDistributeActivity" />
+        <activity android:name=".activity.RegisterManagementActivity" />
+        <activity android:name=".activity.ChangePasswordActivity" />
+        <activity android:name=".activity.PersonalActivity" />
+        <activity android:name=".activity.WoYaoFaLiaoActivity" />
+        <activity android:name=".activity.FaLiaoMingXiActivity" />
+        <activity android:name=".activity.WeiYanShouFaLiaoActivity" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.EditActivity" />
+        <activity android:name=".activity.HandwrittenActivity" />
+        <activity android:name=".activity.ImagePagerActivity" />
+        <activity android:name=".activity.DaiShouLiaoActivity" />
+        <activity
+            android:name=".activity.QueRenShouLiaoActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:name=".activity.ShouLiaoMingXiActivity" />
+        <activity
+            android:name=".activity.FenLiaoActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:name=".activity.FenLiaoMingXiActivity" />
+        <activity android:name=".activity.WeiFenWanActivity" />
+        <activity android:name=".activity.ProjectFenLiaoMingXiActivity" />
+        <activity android:name=".activity.DaiLingLiaoActivity" />
+        <activity android:name=".activity.QueRenLingLiaoActivity" />
+        <activity android:name=".activity.LingLiaoMingXiActivity" />
+        <activity android:name=".activity.SendEditdActivity"></activity>
+    </application>
+
+</manifest>

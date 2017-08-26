@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context="com.gaoyuan.management.activity.WoYaoFaLiaoActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_woyaofaliao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_title" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/change_pwd_bg">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="编号"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_woyaofaliao_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:text=""
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_manages_proje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="项目选择"
+                        android:textColor="@color/black" />
+
+                    <Spinner
+                        android:id="@+id/sp_woyaofaliao_project"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="@dimen/dimens_40"
+                        android:layout_toRightOf="@+id/tv_manages_proje"
+                        android:background="@null"
+                        android:maxLength="10"
+                        android:textSize="@dimen/text_14" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_woyaofaliao_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:id="@+id/tv_woyaofaliao_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:drawablePadding="4dp"
+                    android:drawableTop="@mipmap/add_blue"
+                    android:text="添加物料"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/change_pwd_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="发料日期"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_woyaofaliao_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_weight="1"
+                        android:text="2017-07-15"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/img_woyaofaliao_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/change" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/change_pwd_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="签字"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/img_woyaofaliao_qianming"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:scaleType="fitXY"/>
+
+
+                    <ImageView
+                        android:id="@+id/img_woyaofaliao_qianzi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/img_woyaofaliao_qianming"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:src="@mipmap/qianzi" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_woyaofaliao_certain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@mipmap/querenfaliao"
+                    android:gravity="center"
+                    android:text="确认发料"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

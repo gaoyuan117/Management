@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3b91d4"
+    android:scrollbars="none"
+    tools:context="com.gaoyuan.management.activity.RegisterSupplyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:text="物资管理人员注册"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="46dp">
+
+            <EditText
+                android:id="@+id/et_register_manage_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:hint="请输入账号"
+                android:maxLength="11"
+                android:paddingLeft="54dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray_line"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="账号："
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/et_register_manage_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:hint="请输入6-12位密码"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:paddingLeft="54dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray_line"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="密码："
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="确认密码："
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_register_manage_repwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:hint="请再次确认密码"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:paddingLeft="86dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray_line"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="手机号码："
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_register_manage_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:hint="请输入手机号码"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="86dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray_line"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/tv_manage_po"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="职务选择"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/sp_register_manage_position"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/add_bankcard_spacing"
+                android:layout_marginRight="@dimen/dimens_40"
+                android:layout_toRightOf="@+id/tv_manage_po"
+                android:background="@null"
+                android:maxLength="10"
+                android:textSize="@dimen/text_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/arrow_down" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/tv_manage_proje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="项目选择"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/sp_register_manage_project"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/add_bankcard_spacing"
+                android:layout_marginRight="@dimen/dimens_40"
+                android:layout_toRightOf="@+id/tv_manage_proje"
+                android:background="@null"
+                android:maxLength="10"
+                android:textSize="@dimen/text_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/arrow_down" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white" />
+        </RelativeLayout>
+
+
+        <Button
+
+            android:id="@+id/bt_manage_register"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:background="@mipmap/login_bg"
+            android:text="注册"
+            android:textColor="@color/blue"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/rg_register_manage_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fanhui"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="16dp"
+            />
+
+    </LinearLayout>
+</ScrollView>
